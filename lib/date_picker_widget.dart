@@ -237,7 +237,7 @@ class DatePickerController {
   }
   
   void resetState() {
-    _datePickerState = new _DatePickerState();
+    _datePickerState._currentDate = null;
   }
 
   void jumpToSelection() {
