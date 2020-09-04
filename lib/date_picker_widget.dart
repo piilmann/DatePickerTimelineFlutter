@@ -235,6 +235,10 @@ class DatePickerController {
   void setDatePickerState(_DatePickerState state) {
     _datePickerState = state;
   }
+  
+  void resetState() {
+    _datePickerState = new _DatePickerState();
+  }
 
   void jumpToSelection() {
     assert(_datePickerState != null,
